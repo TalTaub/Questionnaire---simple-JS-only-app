@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class ="mainContainer">
+        <h1 id = "question" class= "question">to begin your test - press "Start"</h1>
+        <div class = "answersBlock">
+            <div class ="answerblock1"> <button id = "button1" class="button1" onclick="button1Clicked()">?</button> <button id = "button2" class="button2" onclick="button2Clicked()">?</button> </div> 
+            <div class ="answerblock2"> <button id = "button3" class="button3" onclick="button3Clicked()">?</button> <button id = "button4" class="button4" onclick="button4Clicked()">?</button> </div>
+        </div>
+        <button id = "start" class = "start" onclick="start()">start</button>
+        <button id = "reset"class = "reset" onclick="reset()">reset</button>
+    </div>
+    
+    <hr>
+
+    <div class="editor">
+        <h1>want to add your own questions? be my guest!</h1>
+        <button id = "kill" class="kill" onclick="killButton()">kill all questions</button>
+            <div>
+                <form id="gameMasterForm" class="gameMasterForm">
+                    <label for="question">Enter your Question Master</label><br>
+                    <input classname="enterQuestion" type="text" id="enterQuestion" name="enterQuestion" placeholder="enter your question"><br><br>
+                    
+                    <label for="answernumber1">answer number 1</label>
+                    <input type="text" id="answernumber1" name="answernumber1" placeholder="enter answer 1"><br><br>
+
+                    <label for="answernumber2">answer number 2</label>
+                    <input type="text" id="answernumber2" name="answernumber2" placeholder="enter answer 2"><br><br>
+
+                    <label for="answernumber3">answer number 1</label>
+                    <input type="text" id="answernumber3" name="answernumber3" placeholder="enter answer 3"><br><br>
+
+                    <label for="answernumber4">answer number 4</label>
+                    <input type="text" id="answernumber4" name="answernumber4" placeholder="enter answer 4"><br><br>
+
+                    <label>Right Answer:</label> <br>
+                    <input type="radio" id="1" name="rightAnswer" value="1" checked="true">
+                    <label for="1">1</label><br>
+                    <input type="radio" id="2" name="rightAnswer" value="2">
+                    <label for="2">2</label><br>
+                    <input type="radio" id="3" name="rightAnswer" value="3">
+                    <label for="3">3</label><br>
+                    <input type="radio" id="4" name="rightAnswer" value="4">
+                    <label for="4">4</label>
+
+                    <input type="button" onclick="pushQuestion()" value="add to questionier!">
+                  </form>        
+            </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+

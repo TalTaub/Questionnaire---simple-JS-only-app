@@ -1,0 +1,73 @@
+body{
+    width: 100%;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    text-align:center;
+}
+
+.mainContainer{
+    background-color: rgb(214, 154, 43);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.question{
+    margin-bottom: 10%;
+}
+.answersBlock{
+    justify-content:space-evenly;
+}
+
+.answerblock1{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.answerblock2{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 5%;
+}
+
+.reset{
+    width: 20%;
+    margin:auto auto 10% auto;
+}
+
+.start{
+    width: 20%;
+    margin:10% auto 10% auto;
+}
+
+.button1{
+    width:40%;
+}
+
+.button2{
+    width:40%;
+}
+
+.button3{
+    width:40%;
+}
+
+.button4{
+    width:40%;
+}
+
+.gameMasterForm{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    background-color: darkred;
+    padding: 2vw 0px 2vw 0px;
+    border-radius: 100px;
+}
+
